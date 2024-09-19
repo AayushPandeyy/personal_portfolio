@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Navbar() {
+function Navbar({ scrollToHeader, scrollToAboutMe }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -17,13 +17,21 @@ function Navbar() {
           </div>
           <div className="hidden md:flex space-x-4 items-center">
             <a
-              href="#"
+              href="/home"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToHeader();
+              }}
               className="text-yellow-400 hover:text-white  px-3 py-2 rounded-md text-lg font-medium"
             >
               Home
             </a>
             <a
-              href="#about"
+              href="/about"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToAboutMe();
+              }}
               className="text-yellow-400 hover:text-white  px-3 py-2 rounded-md text-lg font-medium"
             >
               About
@@ -69,13 +77,21 @@ function Navbar() {
         <div className="md:hidden ">
           <div className="space-y-1 px-2 pb-3 sm:px-3">
             <a
-              href="#"
+              href="/home"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToHeader();
+              }}
               className="block text-yellow-400 hover:text-white  px-3 py-2 rounded-md text-base font-medium"
             >
               Home
             </a>
             <a
-              href="#about"
+              href="/about"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToAboutMe();
+              }}
               className="block text-yellow-400 hover:text-white  px-3 py-2 rounded-md text-base font-medium"
             >
               About
