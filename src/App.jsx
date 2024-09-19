@@ -1,3 +1,4 @@
+import HeaderSection from "./components/HeaderSection";
 import Navbar from "./components/Navbar";
 import TopNavBar from "./components/TopNavBar";
 function App() {
@@ -5,6 +6,7 @@ function App() {
     <>
       <TopNavBar></TopNavBar>
       <Navbar></Navbar>
+      <HeaderSection></HeaderSection>
     </>
   );
 }
