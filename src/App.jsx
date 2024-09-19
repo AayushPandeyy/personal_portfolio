@@ -1,3 +1,4 @@
+import AboutMeSection from "./components/AboutMeSection";
 import HeaderSection from "./components/HeaderSection";
 import Navbar from "./components/Navbar";
 import TopNavBar from "./components/TopNavBar";
@@ -7,6 +8,7 @@ function App() {
       <TopNavBar></TopNavBar>
       <Navbar></Navbar>
       <HeaderSection></HeaderSection>
+      <AboutMeSection></AboutMeSection>
     </>
   );
 }
