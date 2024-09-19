@@ -16,7 +16,7 @@ const ProjectsSection = () => {
       >
         My Projects
       </h1>
-      <div className="container flex-wrap flex gap-8 justify-center">
+      <div className=" flex-wrap flex gap-8 justify-center ">
         {/*project 1*/}
         <div
           className="relative project-box rounded-lg h-auto w-80 text-center p-3 overflow-hidden"
@@ -98,6 +98,7 @@ const ProjectsSection = () => {
             </a>
           </div>
         </div>
+        {/*end of body*/}
       </div>
     </section>
   );

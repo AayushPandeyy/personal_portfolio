@@ -9,6 +9,7 @@ const HeaderSection = () => {
       style={{
         height: "600px",
         backgroundImage: `url(${bg})`,
+        backgroundPosition: "sticky",
       }}
     >
       <div className="absolute inset-0 bg-black bg-opacity-30"></div>
@@ -31,7 +32,7 @@ const HeaderSection = () => {
           className="text-xl text-gray-200 mb-8"
           style={{ fontFamily: "Graduate" }}
         >
-          Your goto <span className="text-yellow-400">Flutter</span> developer
+          A Student and An <span className="text-yellow-400">Ever-Growing</span> developer
         </p>
         <a className="bg-transparent text-yellow-400 border-2 border-yellow-400 cursor-pointer px-6 py-3 rounded-md hover:bg-black hover:text-white transition duration-300">
           Learn More

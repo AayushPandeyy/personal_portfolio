@@ -18,7 +18,7 @@ const AboutMeSection = () => {
         </div>
 
         {/* Text Section */}
-        <div className="lg:w-2/3 text-white text-center lg:text-left flex flex-col justify-center items-start">
+        <div className="lg:w-2/3 text-white text-center lg:text-left flex flex-col justify-center items-center">
           <h2
             className="text-lg text-yellow-400 font-bold mb-4"
             style={{ fontFamily: "Bungee Hairline" }}
