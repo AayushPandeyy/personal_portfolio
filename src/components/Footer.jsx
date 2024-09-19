@@ -15,7 +15,7 @@ const Footer = () => {
 
         <div className="flex space-x-4 md:mb-0 justify-center items-center">
           <a
-            href="https://github.com/your-username"
+            href="https://github.com/AayushPandeyy"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-white transition"
@@ -23,7 +23,7 @@ const Footer = () => {
             <FaGithub size={24} />
           </a>
           <a
-            href="https://linkedin.com/in/your-username"
+            href="https://www.linkedin.com/in/aayush-pandey-a4b413263/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-white transition"
@@ -31,7 +31,7 @@ const Footer = () => {
             <FaLinkedin size={24} />
           </a>
           <a
-            href="https://twitter.com/your-username"
+            href="https://x.com/AayushxMUFC"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-white transition"

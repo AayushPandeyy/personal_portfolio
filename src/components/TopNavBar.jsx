@@ -7,25 +7,19 @@ const TopNavBar = () => {
       {/* Social Icons */}
       <div className="flex space-x-4 justify-center">
         <a
-          href="https://facebook.com"
-          className="text-gray-300 hover:text-white transition duration-300"
-        >
-          <FaFacebookF />
-        </a>
-        <a
-          href="https://twitter.com"
+          href="https://x.com/AayushxMUFC"
           className="text-gray-300 hover:text-white transition duration-300"
         >
           <FaTwitter />
         </a>
         <a
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/in/aayush-pandey-a4b413263/"
           className="text-gray-300 hover:text-white transition duration-300"
         >
           <FaLinkedinIn />
         </a>
         <a
-          href="https://github.com"
+          href="https://github.com/AayushPandeyy"
           className="text-gray-300 hover:text-white transition duration-300"
         >
           <FaGithub />

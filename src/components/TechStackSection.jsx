@@ -10,7 +10,7 @@ const TechStackSection = () => {
   ];
   return (
     <section
-      className="w-screen "
+      className="w-full "
       style={{
         backgroundColor: "#02112a",
       }}
@@ -19,23 +19,17 @@ const TechStackSection = () => {
         {/*title section*/}
         <div className="w-1/2 text-start">
           <h1
-            className="text-sm font-bold text-start mb-4 text-white"
+            className="text-sm font-bold text-center mb-4 text-white"
             style={{ fontFamily: "Bungee Hairline" }}
           >
             What Do I Know?
           </h1>
           <h1
-            className="text-4xl font-bold text-start mb-4 text-yellow-400"
+            className="text-4xl font-bold text-center mb-4 text-yellow-400"
             style={{ fontFamily: "Graduate" }}
           >
             My Tech Stack
           </h1>
-          <p className="text-white text-start font-bold">
-            I focus on building efficient and scalable applications that offer
-            great user experiences. My expertise spans both frontend and backend
-            development, ensuring that projects are well-rounded, reliable, and
-            designed with performance in mind.
-          </p>
         </div>
         {/*skills section*/}
         <div

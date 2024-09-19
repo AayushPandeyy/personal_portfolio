@@ -4,41 +4,44 @@ import { FaLocationArrow, FaMailBulk, FaMobileAlt } from "react-icons/fa";
 const ContactMe = () => {
   return (
     <section className="p-8 bg-black">
-      <div className="flex justify-center gap-8 w-full h-90 text-yellow-400">
+      <div className="flex justify-center gap-8 w-full h-90 text-yellow-400 flex-wrap">
         <div
-          className="contact-details md:w-1/3 rounded-lg bg-red-500 p-6 flex flex-col gap-5 justify-center items-center "
+          className=" relative contact-details w-full md:w-1/3 rounded-lg bg-red-500 p-6  "
           style={{
             height: "500px",
-            backgroundImage: `url(${"https://img.freepik.com/premium-photo/contact-communication-icons-gray-background_254268-5067.jpg"})`,
+            backgroundImage: `url(${"https://img.freepik.com/premium-photo/contact-communication-icons-gray-background_254268-5067.jpg"}) `,
           }}
         >
-          <h1
-            className="text-3xl text-white"
-            style={{ fontFamily: "Graduate" }}
-          >
-            Contact Me
-          </h1>
-          <h1 className="flex items-center gap-4">
-            <span>
-              <FaLocationArrow />
-            </span>
-            Gongabu,Kathmandu
-          </h1>
-          <h1 className="flex items-center gap-4">
-            <span>
-              <FaMobileAlt />
-            </span>
-            +977-9849305128
-          </h1>
-          <h1 className="flex items-center gap-4">
-            <span>
-              <FaMailBulk />
-            </span>
-            ap200061@gmail.com
-          </h1>
+          <div className="absolute inset-0 bg-black bg-opacity-80"></div>
+          <div className="relative flex flex-col gap-5 justify-center items-center h-full w-auto">
+            <h1
+              className="text-3xl text-white"
+              style={{ fontFamily: "Graduate" }}
+            >
+              Contact Me
+            </h1>
+            <h1 className="flex items-center gap-4">
+              <span>
+                <FaLocationArrow />
+              </span>
+              Gongabu,Kathmandu
+            </h1>
+            <h1 className="flex items-center gap-4">
+              <span>
+                <FaMobileAlt />
+              </span>
+              +977-9849305128
+            </h1>
+            <h1 className="flex items-center gap-4">
+              <span>
+                <FaMailBulk />
+              </span>
+              ap200061@gmail.com
+            </h1>
+          </div>
         </div>
         <div
-          className="get-in-touch w-1/2 "
+          className="get-in-touch w-full md:w-1/2"
           style={{
             backgroundColor: "#02112a",
           }}
@@ -50,7 +53,7 @@ const ContactMe = () => {
             Contact Me
           </h1>
           <h1
-            className="text-xl font-bold text-center mb-12 text-yellow-400"
+            className="text-xl font-bold text-center mb-6 text-yellow-400 p-2"
             style={{ fontFamily: "Graduate" }}
           >
             Dont Forget To Leave me a message !

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Navbar({ scrollToHeader, scrollToAboutMe }) {
+function Navbar({ scrollToHeader, scrollToAboutMe, scrollToSkills, scrollToProjects, scrollToContact}) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -11,9 +11,9 @@ function Navbar({ scrollToHeader, scrollToAboutMe }) {
       }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
+        <div className="flex justify-between h-20">
           <div className="flex-shrink-0 flex items-center">
-            <h1 className="text-yellow-400 text-2xl font-bold">MyPortfolio</h1>
+            <img src="/removed-bg-logo.png" className="h-24 w-24" alt="" />
           </div>
           <div className="hidden md:flex space-x-4 items-center">
             <a
@@ -37,13 +37,31 @@ function Navbar({ scrollToHeader, scrollToAboutMe }) {
               About
             </a>
             <a
-              href="#projects"
+              href="/skills"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSkills();
+              }}
+              className="text-yellow-400 hover:text-white  px-3 py-2 rounded-md text-lg font-medium"
+            >
+              Skills
+            </a>
+            <a
+              href="/projects"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToProjects();
+              }}
               className="text-yellow-400 hover:text-white  px-3 py-2 rounded-md text-lg font-medium"
             >
               Projects
             </a>
             <a
-              href="#contact"
+              href="/contact"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToContact();
+              }}
               className="text-yellow-400 hover:text-white  px-3 py-2 rounded-md text-lg font-medium"
             >
               Contact

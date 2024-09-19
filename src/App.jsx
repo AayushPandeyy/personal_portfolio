@@ -11,6 +11,9 @@ import React, { useRef } from "react";
 function App() {
   const headerRef = useRef(null);
   const aboutMeRef = useRef(null);
+  const skillsRef = useRef(null);
+  const projectsRef = useRef(null);
+  const contactRef = useRef(null);
 
   // Function to scroll to a section
   const scrollToSection = (sectionRef) => {
@@ -22,6 +25,9 @@ function App() {
       <Navbar
         scrollToHeader={() => scrollToSection(headerRef)}
         scrollToAboutMe={() => scrollToSection(aboutMeRef)}
+        scrollToSkills={()=> scrollToSection(skillsRef)}
+        scrollToProjects={()=> scrollToSection(projectsRef)}
+        scrollToContact={()=> scrollToSection(contactRef)}
       />
       <header ref={headerRef}>
         <HeaderSection></HeaderSection>
@@ -29,10 +35,16 @@ function App() {
       <section ref={aboutMeRef}>
         <AboutMeSection></AboutMeSection>
       </section>
-      <MySkillsSection></MySkillsSection>
-      <ProjectsSection></ProjectsSection>
+      <section ref={skillsRef}>
+        <MySkillsSection></MySkillsSection>
+      </section>
+      <section ref={projectsRef}>
+        <ProjectsSection></ProjectsSection>
+      </section>
       <TechStackSection></TechStackSection>
-      <ContactMe></ContactMe>
+      <section ref={contactRef}>
+        <ContactMe></ContactMe>
+      </section>
       <Footer></Footer>
     </>
   );
