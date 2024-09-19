@@ -30,8 +30,8 @@ const AboutMeSection = () => {
             <span className="font-semibold text-yellow-400 ">
               Aayush Pandey
             </span>
-            , a passionate Flutter developer with a knack for creating intuitive
-            and dynamic mobile applications.
+            , a passionate Mobile and Web developer with a knack for creating
+            intuitive and dynamic mobile and web applications.
           </p>
           <p className="text-md mb-4 text-gray-500 font-bold">
             My goal is to continue growing in app development and contribute to

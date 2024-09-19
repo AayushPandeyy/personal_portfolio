@@ -3,6 +3,7 @@ import Footer from "./components/Footer";
 import HeaderSection from "./components/HeaderSection";
 import MySkillsSection from "./components/MySkillsSection";
 import Navbar from "./components/Navbar";
+import ProjectsSection from "./components/ProjectsSection";
 import TopNavBar from "./components/TopNavBar";
 import React, { useRef } from "react";
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <AboutMeSection></AboutMeSection>
       </section>
       <MySkillsSection></MySkillsSection>
+      <ProjectsSection></ProjectsSection>
       <Footer></Footer>
     </>
   );

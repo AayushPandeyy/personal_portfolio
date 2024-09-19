@@ -10,7 +10,16 @@ const MySkillsSection = () => {
       }}
     >
       <div className="container mx-auto px-4">
-        <h1 className="text-4xl font-bold text-center mb-12 text-yellow-400">
+        <h1
+          className="text-sm font-bold text-center text-white"
+          style={{ fontFamily: "Bungee Hairline" }}
+        >
+          What I Do?
+        </h1>
+        <h1
+          className="text-4xl font-bold text-center mb-12 text-yellow-400"
+          style={{ fontFamily: "Graduate" }}
+        >
           My Skills
         </h1>
         <div className="flex flex-wrap justify-center gap-8">

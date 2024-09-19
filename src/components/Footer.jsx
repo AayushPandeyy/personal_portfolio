@@ -13,7 +13,7 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="flex space-x-4 mb-4 md:mb-0 justify-center items-center">
+        <div className="flex space-x-4 md:mb-0 justify-center items-center">
           <a
             href="https://github.com/your-username"
             target="_blank"
