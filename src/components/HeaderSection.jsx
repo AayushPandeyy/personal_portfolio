@@ -32,7 +32,8 @@ const HeaderSection = () => {
           className="text-xl text-gray-200 mb-8"
           style={{ fontFamily: "Graduate" }}
         >
-          A Student and An <span className="text-yellow-400">Ever-Growing</span> developer
+          A Student and An <span className="text-yellow-400">Ever-Growing</span>{" "}
+          developer
         </p>
         <a className="bg-transparent text-yellow-400 border-2 border-yellow-400 cursor-pointer px-6 py-3 rounded-md hover:bg-black hover:text-white transition duration-300">
           Learn More

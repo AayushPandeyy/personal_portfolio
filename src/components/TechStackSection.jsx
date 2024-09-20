@@ -25,11 +25,73 @@ const TechStackSection = () => {
             What Do I Know?
           </h1>
           <h1
-            className="text-4xl font-bold text-center mb-4 text-yellow-400"
+            className="text-4xl font-bold text-center mb-8 text-yellow-400"
             style={{ fontFamily: "Graduate" }}
           >
             My Tech Stack
           </h1>
+          <div className=" flex flex gap-8 justify-center ">
+            <div className=" bg-black rounded-full  p-4 shadow-lg ">
+              <img
+                alt="Sketch icon"
+                loading="lazy"
+                width="30"
+                height="30"
+                decoding="async"
+                data-nimg="1"
+                className="rounded-full animate-pulse"
+                src="https://static-00.iconduck.com/assets.00/git-icon-2048x2048-juzdf1l5.png"
+              />
+            </div>
+            <div className=" bg-black rounded-full p-4 shadow-lg ">
+              <img
+                alt="Sketch icon"
+                loading="lazy"
+                width="30"
+                height="30"
+                decoding="async"
+                data-nimg="1"
+                className="rounded-full animate-pulse"
+                src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Dart-logo.png"
+              />
+            </div>
+            <div className=" bg-black rounded-full p-4 shadow-lg ">
+              <img
+                alt="Sketch icon"
+                loading="lazy"
+                width="30"
+                height="30"
+                decoding="async"
+                data-nimg="1"
+                className="rounded-full animate-pulse"
+                src="https://www.cdnlogo.com/logos/r/85/react.svg"
+              />
+            </div>
+            <div className=" bg-black rounded-full p-4 shadow-lg ">
+              <img
+                alt="Sketch icon"
+                loading="lazy"
+                width="30"
+                height="30"
+                decoding="async"
+                data-nimg="1"
+                className="rounded-full animate-pulse"
+                src="https://www.citypng.com/public/uploads/preview/js-javascript-round-logo-icon-png-7017516947717339mnyf7eumy.png"
+              />
+            </div>
+            <div className=" bg-black rounded-full p-4 shadow-lg ">
+              <img
+                alt="Sketch icon"
+                loading="lazy"
+                width="30"
+                height="30"
+                decoding="async"
+                data-nimg="1"
+                className="rounded-full animate-pulse"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Spring_Boot.svg/640px-Spring_Boot.svg.png"
+              />
+            </div>
+          </div>
         </div>
         {/*skills section*/}
         <div

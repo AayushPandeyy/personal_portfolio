@@ -30,9 +30,7 @@ const ProjectsSection = () => {
             src={linkupLogo}
             alt="Project linkupLogo"
           />
-          <h1 className="text-white text-3xl mb-4">
-            LinkUp
-          </h1>
+          <h1 className="text-white text-3xl mb-4">LinkUp</h1>
 
           {/* Overlay */}
           <div className="absolute inset-0 bg-black bg-opacity-90 text-white flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-500 rounded-lg p-4">
@@ -41,7 +39,10 @@ const ProjectsSection = () => {
               friends. Built with Firebase and Flutter for seamless
               communication.
             </p>
-            <a className="bg-transparent text-yellow-400 border-2 border-yellow-400 cursor-pointer px-6 py-3 rounded-md hover:bg-black hover:text-white transition duration-500">
+            <a
+              href="https://github.com/AayushPandeyy/linkup_app/releases"
+              className="bg-transparent text-yellow-400 border-2 border-yellow-400 cursor-pointer px-6 py-3 rounded-md hover:bg-black hover:text-white transition duration-500"
+            >
               Check It Out!
             </a>
           </div>
@@ -67,7 +68,10 @@ const ProjectsSection = () => {
               deleting tasks, you can categorize and prioritize your to-dos, set
               deadlines, and track your progress.
             </p>
-            <a className="bg-transparent text-yellow-400 border-2 border-yellow-400 cursor-pointer px-6 py-3 rounded-md hover:bg-black hover:text-white transition duration-500">
+            <a
+              href="https://github.com/AayushPandeyy/todo_flutter_app/releases"
+              className="bg-transparent text-yellow-400 border-2 border-yellow-400 cursor-pointer px-6 py-3 rounded-md hover:bg-black hover:text-white transition duration-500"
+            >
               Check It Out!
             </a>
           </div>
@@ -83,9 +87,7 @@ const ProjectsSection = () => {
             src={lootscoopLogo}
             alt="Project lootscoop"
           />
-          <h1 className="text-white text-3xl mb-4">
-            LootScoop
-          </h1>
+          <h1 className="text-white text-3xl mb-4">LootScoop</h1>
 
           {/* Overlay */}
           <div className="absolute inset-0 bg-black bg-opacity-90 text-white flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-500 rounded-lg p-4">
@@ -96,7 +98,10 @@ const ProjectsSection = () => {
               deals, view game details, and get direct links to download or
               claim your free games. Never miss out on a great game offer again!
             </p>
-            <a className="bg-transparent text-yellow-400 border-2 border-yellow-400 cursor-pointer px-6 py-3 rounded-md hover:bg-black hover:text-white transition duration-500">
+            <a
+              className="bg-transparent text-yellow-400 border-2 border-yellow-400 cursor-pointer px-6 py-3 rounded-md hover:bg-black hover:text-white transition duration-500"
+              href="https://github.com/AayushPandeyy/LootScoop/releases"
+            >
               Check It Out!
             </a>
           </div>
