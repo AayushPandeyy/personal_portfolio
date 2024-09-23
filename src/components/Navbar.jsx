@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 
-function Navbar({ scrollToHeader, scrollToAboutMe, scrollToSkills, scrollToProjects, scrollToContact}) {
+function Navbar({
+  scrollToHeader,
+  scrollToAboutMe,
+  scrollToSkills,
+  scrollToProjects,
+  scrollToContact,
+}) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -13,7 +19,12 @@ function Navbar({ scrollToHeader, scrollToAboutMe, scrollToSkills, scrollToProje
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20">
           <div className="flex-shrink-0 flex items-center">
-            <img src="/removed-bg-logo.png" className="h-24 w-24" alt="" />
+            <h1
+              style={{ fontFamily: "Monofett" }}
+              className="text-white text-3xl cursor-pointer"
+            >
+              Aayush Pandey
+            </h1>
           </div>
           <div className="hidden md:flex space-x-4 items-center">
             <a

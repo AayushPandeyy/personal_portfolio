@@ -30,8 +30,8 @@ const TechStackSection = () => {
           >
             My Tech Stack
           </h1>
-          <div className=" flex flex gap-8 justify-center ">
-            <div className=" bg-black rounded-full  p-4 shadow-lg ">
+          <div className=" flex flex-wrap gap-8 justify-center  ">
+            <div className=" bg-black rounded-full  p-4 shadow-lg hover:scale-125 transition duration-500">
               <img
                 alt="Sketch icon"
                 loading="lazy"
@@ -43,7 +43,7 @@ const TechStackSection = () => {
                 src="https://static-00.iconduck.com/assets.00/git-icon-2048x2048-juzdf1l5.png"
               />
             </div>
-            <div className=" bg-black rounded-full p-4 shadow-lg ">
+            <div className=" bg-black rounded-full p-4 shadow-lg hover:scale-125 transition duration-500  ">
               <img
                 alt="Sketch icon"
                 loading="lazy"
@@ -55,7 +55,7 @@ const TechStackSection = () => {
                 src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Dart-logo.png"
               />
             </div>
-            <div className=" bg-black rounded-full p-4 shadow-lg ">
+            <div className="bg-black rounded-full p-4 hover:scale-125 transition duration-500 ">
               <img
                 alt="Sketch icon"
                 loading="lazy"
@@ -67,7 +67,7 @@ const TechStackSection = () => {
                 src="https://www.cdnlogo.com/logos/r/85/react.svg"
               />
             </div>
-            <div className=" bg-black rounded-full p-4 shadow-lg ">
+            <div className=" bg-black rounded-full p-4 shadow-lg hover:scale-125 transition duration-500 ">
               <img
                 alt="Sketch icon"
                 loading="lazy"
@@ -79,7 +79,7 @@ const TechStackSection = () => {
                 src="https://www.citypng.com/public/uploads/preview/js-javascript-round-logo-icon-png-7017516947717339mnyf7eumy.png"
               />
             </div>
-            <div className=" bg-black rounded-full p-4 shadow-lg ">
+            <div className=" bg-black rounded-full p-4 shadow-lg hover:scale-125 transition duration-500 ">
               <img
                 alt="Sketch icon"
                 loading="lazy"

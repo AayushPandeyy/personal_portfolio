@@ -29,7 +29,7 @@ const HeaderSection = () => {
           I am <span className="text-yellow-400">Aayush Pandey</span>
         </h1>
         <p
-          className="text-xl text-gray-200 mb-8"
+          className="text-xl text-gray-200 mb-8 p-2"
           style={{ fontFamily: "Graduate" }}
         >
           A Student and An <span className="text-yellow-400">Ever-Growing</span>{" "}

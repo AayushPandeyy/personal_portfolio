@@ -1,9 +1,64 @@
-import React from "react";
+import React, { useState } from "react";
+import emailjs from "emailjs-com";
 import { FaLocationArrow, FaMailBulk, FaMobileAlt } from "react-icons/fa";
+import Alert from "./Alert";
 
 const ContactMe = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const [alertData, setAlertData] = useState({
+    show: false,
+    type: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_ii5w4qu", // Replace with your EmailJS Service ID
+        "template_khn1u9v", // Replace with your EmailJS Template ID
+        e.target,
+        "GmOB_etJlAUOSPTJP" // Replace with your EmailJS User ID
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setAlertData({
+            show: true,
+            type: "success",
+            message: "Message sent successfully!",
+          });
+          setFormData({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          console.log(error.text);
+          setAlertData({
+            show: true,
+            type: "error",
+            message: "Failed to send message. Please try again!",
+          });
+        }
+      );
+  };
   return (
     <section className="p-8 bg-black">
+      {alertData.show && (
+        <Alert type={alertData.type} message={alertData.message} />
+      )}
       <div className="flex justify-center gap-8 w-full h-90 text-yellow-400 flex-wrap">
         <div
           className=" relative contact-details w-full md:w-1/3 rounded-lg bg-red-500 p-6  "
@@ -58,29 +113,37 @@ const ContactMe = () => {
           >
             Dont Forget To Leave me a message !
           </h1>
-          <form action="" className="p-6">
+          <form onSubmit={sendEmail} className="p-6">
             <div>
               <input
                 type="text"
+                name="name"
                 placeholder="Your Name"
+                value={formData.name}
+                onChange={handleChange}
                 className="w-full px-4 py-2 h-12 rounded-lg bg-gray-800"
               />
             </div>
             <div className="mt-6">
               <input
-                type="text"
+                type="email"
+                name="email"
                 placeholder="Your Email"
-                className="w-full px-4 h-12 py-2  rounded-lg bg-gray-800"
+                value={formData.email}
+                onChange={handleChange}
+                className="w-full px-4 py-2 h-12 rounded-lg bg-gray-800"
               />
             </div>
             <div className="mt-6">
-              <input
-                type="text"
+              <textarea
+                name="message"
                 placeholder="Please leave me a message here"
+                value={formData.message}
+                onChange={handleChange}
                 className="w-full px-4 py-2 h-32 rounded-lg bg-gray-800"
               />
             </div>
-            <button className="mt-6 rounded-lg bg-white px-4 py-3  text-black">
+            <button className="mt-6 rounded-lg bg-white px-4 py-3 text-black">
               Send Message
             </button>
           </form>
