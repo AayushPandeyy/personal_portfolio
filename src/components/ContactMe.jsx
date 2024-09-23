@@ -56,9 +56,6 @@ const ContactMe = () => {
   };
   return (
     <section className="p-8 bg-black">
-      {alertData.show && (
-        <Alert type={alertData.type} message={alertData.message} />
-      )}
       <div className="flex justify-center gap-8 w-full h-90 text-yellow-400 flex-wrap">
         <div
           className=" relative contact-details w-full md:w-1/3 rounded-lg bg-red-500 p-6  "
@@ -96,11 +93,14 @@ const ContactMe = () => {
           </div>
         </div>
         <div
-          className="get-in-touch w-full md:w-1/2"
+          className="get-in-touch w-full md:w-1/2 p-2"
           style={{
             backgroundColor: "#02112a",
           }}
         >
+          {alertData.show && (
+            <Alert type={alertData.type} message={alertData.message} />
+          )}
           <h1
             className="text-sm font-bold text-center text-white mt-4"
             style={{ fontFamily: "Bungee Hairline" }}
